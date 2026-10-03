@@ -695,3 +695,46 @@
     .card-title{ font-size:18px; }
     .card-desc{ font-size:13px; }
   }
+
+  /* ─────────────────────────────────────────
+   VISITOR COUNT
+   Subtle pill in the footer. Hidden by default — JS reveals it.
+   ───────────────────────────────────────── */
+.visits{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding: 3px 9px 3px 8px;
+    border-radius: 99px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.02);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted-2);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    transition: var(--dur-base) var(--ease);
+  }
+  .visits[hidden]{ display: none; }
+  .visits svg{
+    width: 11px; height: 11px;
+    opacity: .6;
+    flex: 0 0 auto;
+  }
+  .visits-label{
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted-3);
+  }
+  #visitCount{
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .visits:hover{
+    border-color: var(--line-2);
+    background: rgba(255,255,255,.04);
+  }
+  .visits:hover svg{ opacity: 1; }
+  .visits:hover #visitCount{ color: #fff; }

@@ -1,11 +1,7 @@
 /* ═══════════════════════════════════════════
    studio · shared app shell
    Every app in this repo imports this.
-   Depends on: tokens.css
-   Import order in apps:
-     <link rel="stylesheet" href="../../assets/css/tokens.css">
-     <link rel="stylesheet" href="../../assets/css/app.css">
-     <style> /* app-specific  </style> */
+   Depends on: tokens.css */
 
      /* ─────────────────────────────────────────
         APP SHELL
