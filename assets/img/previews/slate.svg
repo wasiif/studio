@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1038"/>
+      <stop offset="55%" stop-color="#160a1c"/>
+      <stop offset="100%" stop-color="#08060c"/>
+    </linearGradient>
+    <linearGradient id="sAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <radialGradient id="sGlow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- base -->
+  <rect width="400" height="220" fill="url(#sBg)"/>
+  <ellipse cx="200" cy="115" rx="180" ry="120" fill="url(#sGlow)"/>
+
+  <!-- stacked cards behind, rotated slightly -->
+  <g transform="translate(180 118)">
+    <rect x="-44" y="-68" width="88" height="130" rx="12"
+          fill="rgba(255,255,255,.03)"
+          stroke="rgba(255,255,255,.07)" stroke-width="1.5"
+          transform="rotate(-13) translate(-30 6)"/>
+
+    <rect x="-44" y="-68" width="88" height="130" rx="12"
+          fill="rgba(255,255,255,.05)"
+          stroke="rgba(255,255,255,.1)" stroke-width="1.5"
+          transform="rotate(-6) translate(-14 3)"/>
+
+    <!-- front card -->
+    <g>
+      <rect x="-44" y="-68" width="88" height="130" rx="12"
+            fill="url(#sAccent)" opacity=".94"/>
+
+      <!-- shine -->
+      <path d="M-44 -68 L44 -68 L44 -30 L-44 2 Z" fill="rgba(255,255,255,.09)"/>
+
+      <!-- text lines -->
+      <line x1="-30" y1="-42" x2="28" y2="-42"
+            stroke="white" stroke-opacity=".9"
+            stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-30" y1="-26" x2="38" y2="-26"
+            stroke="white" stroke-opacity=".55"
+            stroke-width="2" stroke-linecap="round"/>
+      <line x1="-30" y1="-14" x2="24" y2="-14"
+            stroke="white" stroke-opacity=".45"
+            stroke-width="2" stroke-linecap="round"/>
+      <line x1="-30" y1="-2" x2="34" y2="-2"
+            stroke="white" stroke-opacity=".45"
+            stroke-width="2" stroke-linecap="round"/>
+      <line x1="-30" y1="10" x2="14" y2="10"
+            stroke="white" stroke-opacity=".35"
+            stroke-width="2" stroke-linecap="round"/>
+
+      <!-- checkmark badge -->
+      <circle cx="30" cy="42" r="13" fill="white" opacity=".96"/>
+      <path d="M24 42 L28.5 46.5 L37 37"
+            fill="none"
+            stroke="#8B5CF6"
+            stroke-width="2.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- floating secondary card hints on the right -->
+  <g transform="translate(300 78)" opacity=".55">
+    <rect x="0" y="0" width="72" height="7" rx="3.5"
+          fill="rgba(255,255,255,.1)"/>
+    <rect x="0" y="16" width="54" height="7" rx="3.5"
+          fill="rgba(255,255,255,.08)"/>
+    <rect x="0" y="32" width="64" height="7" rx="3.5"
+          fill="rgba(255,255,255,.08)"/>
+    <rect x="0" y="48" width="40" height="7" rx="3.5"
+          fill="rgba(255,255,255,.06)"/>
+  </g>
+
+  <!-- small tags bottom-left -->
+  <g transform="translate(38 158)" opacity=".6">
+    <rect x="0" y="0" width="34" height="12" rx="6"
+          fill="rgba(139,92,246,.35)"
+          stroke="rgba(139,92,246,.5)" stroke-width=".8"/>
+    <rect x="42" y="0" width="26" height="12" rx="6"
+          fill="rgba(255,255,255,.06)"
+          stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+    <rect x="76" y="0" width="20" height="12" rx="6"
+          fill="rgba(255,255,255,.06)"
+          stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+  </g>
+</svg>

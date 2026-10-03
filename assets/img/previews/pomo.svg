@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2450"/>
+      <stop offset="55%" stop-color="#0d1128"/>
+      <stop offset="100%" stop-color="#06070f"/>
+    </linearGradient>
+    <linearGradient id="pRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6D8BFF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="pWin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b376a"/>
+      <stop offset="55%" stop-color="#161b3a"/>
+      <stop offset="100%" stop-color="#0b0e1f"/>
+    </linearGradient>
+    <radialGradient id="pGlow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#6D8BFF" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#6D8BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pMoon" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#e4e9ff" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#e4e9ff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="pClip">
+      <rect x="272" y="28" width="104" height="140" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- base -->
+  <rect width="400" height="220" fill="url(#pBg)"/>
+
+  <!-- window with sky and rain -->
+  <g clip-path="url(#pClip)">
+    <rect x="272" y="28" width="104" height="140" fill="url(#pWin)"/>
+    <circle cx="324" cy="80" r="46" fill="url(#pMoon)"/>
+    <circle cx="324" cy="80" r="14" fill="#e9edff" opacity=".85"/>
+
+    <!-- rain drops -->
+    <g stroke="#a9c1ff" stroke-width="1.2" stroke-linecap="round" opacity=".45">
+      <line x1="286" y1="42" x2="282" y2="52"/>
+      <line x1="298" y1="58" x2="294" y2="68"/>
+      <line x1="312" y1="40" x2="308" y2="50"/>
+      <line x1="326" y1="66" x2="322" y2="76"/>
+      <line x1="340" y1="50" x2="336" y2="60"/>
+      <line x1="354" y1="78" x2="350" y2="88"/>
+      <line x1="366" y1="52" x2="362" y2="62"/>
+      <line x1="290" y1="96" x2="286" y2="106"/>
+      <line x1="306" y1="112" x2="302" y2="122"/>
+      <line x1="322" y1="100" x2="318" y2="110"/>
+      <line x1="338" y1="118" x2="334" y2="128"/>
+      <line x1="352" y1="108" x2="348" y2="118"/>
+      <line x1="366" y1="130" x2="362" y2="140"/>
+      <line x1="292" y1="140" x2="288" y2="150"/>
+      <line x1="310" y1="148" x2="306" y2="158"/>
+      <line x1="334" y1="152" x2="330" y2="162"/>
+      <line x1="356" y1="148" x2="352" y2="158"/>
+    </g>
+  </g>
+
+  <!-- window frame -->
+  <rect x="272" y="28" width="104" height="140" rx="8"
+        fill="none" stroke="rgba(255,255,255,.13)" stroke-width="1.5"/>
+  <line x1="324" y1="28" x2="324" y2="168"
+        stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+  <line x1="272" y1="98" x2="376" y2="98"
+        stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+
+  <!-- focus ring glow -->
+  <circle cx="130" cy="112" r="96" fill="url(#pGlow)"/>
+
+  <!-- focus ring -->
+  <circle cx="130" cy="112" r="52" fill="none"
+          stroke="rgba(255,255,255,.08)" stroke-width="7"/>
+  <circle cx="130" cy="112" r="52" fill="none"
+          stroke="url(#pRing)" stroke-width="7"
+          stroke-linecap="round"
+          stroke-dasharray="326.7" stroke-dashoffset="105"
+          transform="rotate(-90 130 112)"/>
+
+  <!-- ring head dot -->
+  <circle cx="130" cy="112" r="3.5" fill="#6D8BFF" opacity=".95"/>
+
+  <!-- round dots below -->
+  <circle cx="108" cy="186" r="2.5" fill="#6D8BFF"/>
+  <circle cx="120" cy="186" r="2.5" fill="rgba(255,255,255,.15)"/>
+  <circle cx="132" cy="186" r="2.5" fill="rgba(255,255,255,.15)"/>
+  <circle cx="144" cy="186" r="2.5" fill="rgba(255,255,255,.15)"/>
+
+  <!-- faint desk line -->
+  <line x1="0" y1="196" x2="400" y2="196"
+        stroke="rgba(255,255,255,.05)" stroke-width="1"/>
+</svg>
