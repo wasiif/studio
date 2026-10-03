@@ -1,0 +1,28 @@
+{
+    "apps": [
+      {
+        "id": "pomo",
+        "name": "POMO",
+        "tagline": "Focus timer with mood",
+        "description": "A pomodoro timer with five moods — Study, Deep Work, Exercise, Reading and Custom — each with its own animated backdrop.",
+        "href": "apps/pomo/",
+        "version": "1.0.0",
+        "status": "stable",
+        "tags": ["focus", "productivity"],
+        "preview": "assets/img/previews/pomo.svg",
+        "added": "2026-01-15"
+      },
+      {
+        "id": "slate",
+        "name": "SLATE",
+        "tagline": "Tasks & notes",
+        "description": "A task list with natural-language input and a note editor with a pressure-sensitive drawing canvas for pen, finger, or mouse.",
+        "href": "apps/slate/",
+        "version": "1.0.0",
+        "status": "stable",
+        "tags": ["notes", "tasks", "productivity"],
+        "preview": "assets/img/previews/slate.svg",
+        "added": "2026-01-15"
+      }
+    ]
+}
